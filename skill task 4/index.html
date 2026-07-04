@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern To Do App</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>✔ My Tasks</h1>
+
+<div class="top">
+
+<input type="text" id="task" placeholder="Enter Task">
+
+<input type="datetime-local" id="date">
+
+<button onclick="addTask()">Add</button>
+
+</div>
+
+<div class="search">
+
+<input type="text" id="search" placeholder="Search Task">
+
+</div>
+
+<div class="filters">
+
+<button class="active" data-filter="all">All</button>
+
+<button data-filter="pending">Pending</button>
+
+<button data-filter="completed">Completed</button>
+
+</div>
+
+<div class="progressBox">
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="count">0 / 0 Completed</p>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
